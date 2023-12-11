@@ -1,0 +1,14 @@
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Release\CreatorsGUI.exe.config
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Release\CreatorsGUI.exe
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Release\CreatorsGUI.pdb
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Release\CreatorsApplication.dll
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Release\CreatorsApplication.pdb
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.csproj.AssemblyReference.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.AppData.resources
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.Finals.resources
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.Properties.Resources.resources
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.csproj.GenerateResource.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.csproj.CoreCompileInputs.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.csproj.CopyComplete
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.exe
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Release\CreatorsGUI.pdb

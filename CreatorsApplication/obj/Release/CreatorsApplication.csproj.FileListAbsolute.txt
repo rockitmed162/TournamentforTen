@@ -1,0 +1,6 @@
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\bin\Release\CreatorsApplication.dll
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\bin\Release\CreatorsApplication.pdb
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Release\CreatorsApplication.csproj.AssemblyReference.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Release\CreatorsApplication.csproj.CoreCompileInputs.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Release\CreatorsApplication.dll
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Release\CreatorsApplication.pdb

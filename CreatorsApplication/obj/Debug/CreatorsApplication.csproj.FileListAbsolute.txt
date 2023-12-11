@@ -1,0 +1,12 @@
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsApplication\bin\Debug\CreatorsApplication.dll
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsApplication\bin\Debug\CreatorsApplication.pdb
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsApplication\obj\Debug\CreatorsApplication.csproj.AssemblyReference.cache
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsApplication\obj\Debug\CreatorsApplication.csproj.CoreCompileInputs.cache
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsApplication\obj\Debug\CreatorsApplication.dll
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsApplication\obj\Debug\CreatorsApplication.pdb
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\bin\Debug\CreatorsApplication.dll
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\bin\Debug\CreatorsApplication.pdb
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Debug\CreatorsApplication.csproj.AssemblyReference.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Debug\CreatorsApplication.csproj.CoreCompileInputs.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Debug\CreatorsApplication.dll
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsApplication\obj\Debug\CreatorsApplication.pdb

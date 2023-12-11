@@ -1,0 +1,29 @@
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\bin\Debug\CreatorsGUI.exe.config
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\bin\Debug\CreatorsGUI.exe
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\bin\Debug\CreatorsGUI.pdb
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.AssemblyReference.cache
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.Properties.Resources.resources
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.GenerateResource.cache
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.CoreCompileInputs.cache
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.exe
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.pdb
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.Finals.resources
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\bin\Debug\CreatorsApplication.dll
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\bin\Debug\CreatorsApplication.pdb
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.CopyComplete
+C:\Users\Joku\source\repos\CreatorsApplication\CreatorsGUI\obj\Debug\CreatorsGUI.AppData.resources
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Debug\CreatorsGUI.exe.config
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Debug\CreatorsGUI.exe
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Debug\CreatorsGUI.pdb
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Debug\CreatorsApplication.dll
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\bin\Debug\CreatorsApplication.pdb
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.AssemblyReference.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.AppData.resources
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.Finals.resources
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.Properties.Resources.resources
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.GenerateResource.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.CoreCompileInputs.cache
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.csproj.CopyComplete
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.exe
+C:\Users\jop\source\repos\Uusi kansio (2)\CreatorsGUI\obj\Debug\CreatorsGUI.pdb
