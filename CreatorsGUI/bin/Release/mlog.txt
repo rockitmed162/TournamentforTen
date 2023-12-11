@@ -1,0 +1,194 @@
+GUNZ 1,0,0,290 launched. build (Oct 16 2023 21:49:35) 
+Log time (12/11/23 21:45:32)
+Windows = 6.2 Build 9200 ,  (16722432KB) :  Windows 8..
+CPU ID =        Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz ( family = 0 , model = 586 , stepping = 10759 )
+Display Device = NVIDIA GeForce GTX 970 ( vendor=10de device=13c2 subsys=367a1458 revision=a1 )
+Display Driver Version = 31.0.0015.3623
+Load XML from memory : system/locale.xml- SUCCESS
+Country : (BRZ), Language : (BRZ)
+Load Config from file : config.xml- SUCCESS
+Load XML from memory : system/system.xml- SUCCESS
+Load XML from memory : system/USA/strings.xml(0x0009) - SUCCESS
+Load XML from memory : system/USA/cserror.xml(0x0009) - SUCCESS
+Load XML from memory : system/USA/messages.xml(0x0009) - SUCCESS
+Load XML from memory : system/gametypecfg.xml 
+InitializeNotify ok.
+WFog Enabled Device.
+device created.
+Video memory 2047.500000 
+shader initialize successful : 1
+main : RGetLenzFlare()->Initialize() 
+Alpha GunZ - Ver 0
+InitialLoading success.
+interface Initialize success
+ZApplication::OnCreate : begin
+0(Ensisijainen ääniohjain): Hardware Mixing Not Supported
+1(32PFL3605H (NVIDIA High Definition Audio)): Hardware Mixing Not Supported
+2(Digital Audio (S/PDIF) (High Definition Audio Device)): Hardware Mixing Not Supported
+3(Digital Audio (S/PDIF) (High Definition Audio Device)): Hardware Mixing Not Supported
+[[[getMaxChannel32]]]]
+
+-------------------> Sound Engine Create : 2.293000 
+
+sound engine create.
+Load XML from memory : system/USA/tips.xml(0x0009)start log bipmap
+Destroy gunz
+Destroy sound engine.
+Destroy sound engine. success
+Destroy console.
+Destroy interface begin 
+destroy client.
+PeerInfoList Released
+clear looks end.
+Widget map clear end.
+desctroy cursor system end.
+clear IDL resource end.
+Final interface end.
+Destroy game interface done.
+clear looks end.
+Widget map clear end.
+desctroy cursor system end.
+Destroy mesh manager.
+Destroy weapon mesh manager.
+Clear SkillManager.
+Clear QuestItemDescMgr.
+Clear MatchItemDescMgr.
+Clear ChattingFilter.
+Clear ChannelRuleMgr.
+destroy game application done.
+interface finalize.
+game input destroy.
+game gonfiguration destroy.
+Bitmap manager destroy Animation bitmap.
+destroy gunz finish.
+Rframe_destory::closeDisplay
+end of load bitmaps2
+loading pictures : 2.600000 
+IDLResource Loading Success!!
+IDL resources : 0.162000 
+start InitInterface option
+Number of Display mode : 47
+end of InitInterface option ok
+Init maps : no Current ChannelRule 
+Screen Effect Manager Create : 0.499000 
+Screen effect manager create success.
+SFX/ef_hp ampulla.elu mesh Plane57 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_hp ampulla.elu mesh Plane50 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_hp ampulla.elu mesh Plane51 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_hp ampulla.elu mesh Plane52 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_hp ampulla.elu mesh Plane53 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_hp ampulla.elu mesh Plane54 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_hp ampulla.elu mesh Plane56 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_ap ampulla.elu mesh Plane50 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_ap ampulla.elu mesh Plane51 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_ap ampulla.elu mesh Plane52 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_ap ampulla.elu mesh Plane53 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_ap ampulla.elu mesh Plane54 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_ap ampulla.elu mesh Plane56 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_ap ampulla.elu mesh Plane57 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_haste ampulla.elu mesh Plane50 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_haste ampulla.elu mesh Plane51 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_haste ampulla.elu mesh Plane52 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_haste ampulla.elu mesh Plane53 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_haste ampulla.elu mesh Plane54 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_haste ampulla.elu mesh Plane56 node 2 face 0 point -> physique 3 Greater than
+SFX/ef_haste ampulla.elu mesh Plane57 node 2 face 0 point -> physique 3 Greater than
+Effect manager create success.
+Client create success.
+game interface create success.
+
+-------------------> GameInterface Create : 9.040000 
+
+model/man/man-parts_shunter.elu mesh eq_chest_shunter node 34 face 0 point -> physique 3 Greater than
+model/man/man-parts_dryad.elu mesh eq_chest_dryad node 680 face 0 point -> physique 3 Greater than
+model/man/man-parts_gveteran.elu mesh eq_chest_gveteran node 6 face 2 point -> physique 3 Greater than
+model/man/man-parts_mummy.elu mesh eq_chest_mummy node 18 face 0 point -> physique 3 Greater than
+model/woman/woman-parts_blackdragon.elu mesh eq_legs_blackdragon node 301 face 1 point -> physique 3 Greater than
+model/woman/woman-parts_eskimo.elu mesh eq_chest_eskimo node 80 face 1 point -> physique 3 Greater than
+model/woman/woman-parts_bloodsuit.elu mesh eq_chest_bloodsuit node 129 face 0 point -> physique 3 Greater than
+model/woman/woman-parts_gveteran.elu mesh eq_chest_gveteran node 6 face 1 point -> physique 3 Greater than
+Load character.xml success,
+
+-------------------> Character Loading : 2.740000 
+
+
+-------------------> WeaponMesh Loading : 0.451000 
+
+Load weapon.xml success. 
+
+-------------------> Worlditem Loading : 0.045000 
+
+Load zitem info success.
+Load zBuff info success.
+Init world item manager success.
+Init map Descriptor success.
+Init channel rule manager success.
+Init abuse manager success.
+Init chatting filter. success
+
+-------------------> ETC .. : 0.363000 
+
+
+LoginID: 3333
+BspObject open : begin interface/church/church_b.rs 
+RBspObject::Open : Open_MaterialList
+RBspObject::Open : Open_LightList
+BspObject open object list : begin
+RBspObject::Open_ObjectList : size 8 
+RBspObject::Open_ObjectList : end
+RBspObject::Open : OpenDescription
+RBspObject::OpenRs : file.Open 
+RBspObject::OpenRs : file.Read(&header) 
+RBspObject::OpenRs : file.Read(&nMaterial) 
+RBspObject::OpenRs : Open_Nodes begin 
+RBspObject::OpenRs : Open_Nodes end 
+RBspObject::Open : OpenRs 
+RBspObject::Open : OpenBsp 
+RBspObject::Open : done
+BspObject open : begin interface/church/church_a.rs 
+RBspObject::Open : Open_MaterialList
+RBspObject::Open : Open_LightList
+BspObject open object list : begin
+RBspObject::Open_ObjectList : size 38 
+RBspObject::Open_ObjectList : end
+RBspObject::Open : OpenDescription
+RBspObject::OpenRs : file.Open 
+RBspObject::OpenRs : file.Read(&header) 
+RBspObject::OpenRs : file.Read(&nMaterial) 
+RBspObject::OpenRs : Open_Nodes begin 
+RBspObject::OpenRs : Open_Nodes end 
+RBspObject::Open : OpenRs 
+RBspObject::Open : OpenBsp 
+RBspObject::Open : done
+ZInterfaceBackground::LoadMesh pMapDesc->LoadSmokeDesc 
+main : OnCreate() done
+Destroy gunz
+Destroy sound engine.
+Destroy sound engine. success
+Destroy console.
+Destroy interface begin 
+destroy client.
+PeerInfoList Released
+clear looks end.
+Widget map clear end.
+desctroy cursor system end.
+clear IDL resource end.
+Final interface end.
+Destroy game interface done.
+clear looks end.
+Widget map clear end.
+desctroy cursor system end.
+Destroy mesh manager.
+Destroy weapon mesh manager.
+Clear SkillManager.
+Clear QuestItemDescMgr.
+Clear MatchItemDescMgr.
+Clear ChattingFilter.
+Clear ChannelRuleMgr.
+destroy game application done.
+interface finalize.
+game input destroy.
+game gonfiguration destroy.
+Bitmap manager destroy Animation bitmap.
+destroy gunz finish.
+Rframe_destory::closeDisplay

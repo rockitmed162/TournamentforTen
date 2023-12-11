@@ -58,6 +58,10 @@
             this.mapbox = new System.Windows.Forms.ComboBox();
             this.Entryfee = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.Start = new System.Windows.Forms.Button();
+            this.btnDownload = new System.Windows.Forms.Button();
+            this.btnCheckUpdates = new System.Windows.Forms.Button();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +71,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Niagara Solid", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label1.Location = new System.Drawing.Point(145, 17);
+            this.label1.Location = new System.Drawing.Point(128, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 34);
@@ -87,7 +91,7 @@
             this.button6.Location = new System.Drawing.Point(11, 375);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(460, 82);
+            this.button6.Size = new System.Drawing.Size(419, 82);
             this.button6.TabIndex = 1;
             this.button6.Text = "Start Creator";
             this.button6.UseCompatibleTextRendering = true;
@@ -163,7 +167,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Niagara Engraved", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(7, 171);
+            this.label6.Location = new System.Drawing.Point(6, 171);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 28);
@@ -197,7 +201,7 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Niagara Engraved", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(7, 222);
+            this.label11.Location = new System.Drawing.Point(6, 222);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 28);
@@ -225,7 +229,7 @@
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Niagara Engraved", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(7, 249);
+            this.label13.Location = new System.Drawing.Point(6, 249);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(60, 28);
@@ -239,7 +243,7 @@
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("Niagara Engraved", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(8, 276);
+            this.label14.Location = new System.Drawing.Point(6, 276);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(60, 28);
@@ -293,7 +297,7 @@
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Niagara Engraved", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(7, 329);
+            this.label15.Location = new System.Drawing.Point(5, 328);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(64, 28);
@@ -317,7 +321,7 @@
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("Niagara Engraved", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(6, 96);
+            this.label16.Location = new System.Drawing.Point(8, 96);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(56, 28);
@@ -371,7 +375,7 @@
             "25",
             "30",
             "N/A"});
-            this.roundbox.Location = new System.Drawing.Point(311, 91);
+            this.roundbox.Location = new System.Drawing.Point(322, 196);
             this.roundbox.Name = "roundbox";
             this.roundbox.Size = new System.Drawing.Size(93, 21);
             this.roundbox.TabIndex = 4;
@@ -384,7 +388,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Niagara Solid", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label7.Location = new System.Drawing.Point(309, 62);
+            this.label7.Location = new System.Drawing.Point(320, 167);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 23);
@@ -398,7 +402,7 @@
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Niagara Solid", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label8.Location = new System.Drawing.Point(309, 130);
+            this.label8.Location = new System.Drawing.Point(320, 235);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(33, 23);
@@ -418,7 +422,7 @@
             "Factory",
             "AutoMap Selected",
             "NoName"});
-            this.mapbox.Location = new System.Drawing.Point(311, 159);
+            this.mapbox.Location = new System.Drawing.Point(322, 264);
             this.mapbox.Name = "mapbox";
             this.mapbox.Size = new System.Drawing.Size(93, 21);
             this.mapbox.TabIndex = 4;
@@ -428,7 +432,7 @@
             // 
             this.Entryfee.BackColor = System.Drawing.Color.Brown;
             this.Entryfee.ForeColor = System.Drawing.SystemColors.Window;
-            this.Entryfee.Location = new System.Drawing.Point(311, 222);
+            this.Entryfee.Location = new System.Drawing.Point(322, 327);
             this.Entryfee.Margin = new System.Windows.Forms.Padding(2);
             this.Entryfee.Multiline = true;
             this.Entryfee.Name = "Entryfee";
@@ -443,12 +447,79 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Niagara Solid", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label9.Location = new System.Drawing.Point(309, 191);
+            this.label9.Location = new System.Drawing.Point(320, 296);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 23);
             this.label9.TabIndex = 0;
             this.label9.Text = "Entry Fee";
+            // 
+            // Start
+            // 
+            this.Start.AutoEllipsis = true;
+            this.Start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Start.FlatAppearance.BorderColor = System.Drawing.Color.OldLace;
+            this.Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Start.Font = new System.Drawing.Font("Arial Narrow", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.Start.ForeColor = System.Drawing.Color.DarkRed;
+            this.Start.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Start.Location = new System.Drawing.Point(11, 491);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(183, 57);
+            this.Start.TabIndex = 5;
+            this.Start.Text = "LAUNCH";
+            this.Start.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
+            // 
+            // btnDownload
+            // 
+            this.btnDownload.AutoEllipsis = true;
+            this.btnDownload.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnDownload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDownload.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
+            this.btnDownload.FlatAppearance.BorderSize = 2;
+            this.btnDownload.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownload.Font = new System.Drawing.Font("MS Gothic", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.btnDownload.ForeColor = System.Drawing.Color.White;
+            this.btnDownload.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDownload.Location = new System.Drawing.Point(313, 503);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(117, 45);
+            this.btnDownload.TabIndex = 5;
+            this.btnDownload.Text = "Download";
+            this.btnDownload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDownload.UseVisualStyleBackColor = false;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
+            // 
+            // btnCheckUpdates
+            // 
+            this.btnCheckUpdates.AutoEllipsis = true;
+            this.btnCheckUpdates.BackColor = System.Drawing.Color.Firebrick;
+            this.btnCheckUpdates.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCheckUpdates.FlatAppearance.BorderColor = System.Drawing.Color.Snow;
+            this.btnCheckUpdates.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnCheckUpdates.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckUpdates.Font = new System.Drawing.Font("MS Gothic", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.btnCheckUpdates.ForeColor = System.Drawing.Color.LightCyan;
+            this.btnCheckUpdates.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCheckUpdates.Location = new System.Drawing.Point(213, 503);
+            this.btnCheckUpdates.Name = "btnCheckUpdates";
+            this.btnCheckUpdates.Size = new System.Drawing.Size(92, 45);
+            this.btnCheckUpdates.TabIndex = 5;
+            this.btnCheckUpdates.Text = "update";
+            this.btnCheckUpdates.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCheckUpdates.UseVisualStyleBackColor = false;
+            this.btnCheckUpdates.Click += new System.EventHandler(this.btnCheckUpdates_Click);
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(11, 465);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(419, 17);
+            this.progressBar.TabIndex = 6;
             // 
             // CreatorsGUI
             // 
@@ -457,7 +528,11 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.MenuText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(482, 468);
+            this.ClientSize = new System.Drawing.Size(438, 558);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.btnCheckUpdates);
+            this.Controls.Add(this.btnDownload);
+            this.Controls.Add(this.Start);
             this.Controls.Add(this.mapbox);
             this.Controls.Add(this.roundbox);
             this.Controls.Add(this.p10);
@@ -532,5 +607,9 @@
         public System.Windows.Forms.ComboBox mapbox;
         public System.Windows.Forms.TextBox Entryfee;
         public System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button Start;
+        private System.Windows.Forms.Button btnDownload;
+        private System.Windows.Forms.Button btnCheckUpdates;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
