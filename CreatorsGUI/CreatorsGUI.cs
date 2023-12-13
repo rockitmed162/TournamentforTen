@@ -23,7 +23,7 @@ namespace CreatorsGUI {
     public partial class CreatorsGUI : Form {
         WebClient webClient;
         string updateURL = "http://localhost/updates/update"; // Replace with your update file URL (without file extension) & if its problematic and you need multiple files updates(one way is to add .zip or multiply the updateurl lines for eachfile.
-        string updateFilePath = @""; // Destination to save updated file
+        string updateFilePath = @""; // Destination to save updated file. currently the files are saved into same directory as the application.
 
         private List<string> players = new List<string>();
 
@@ -34,7 +34,7 @@ namespace CreatorsGUI {
 
 
         }
-        // Metodi pelaajien hakemiseksi
+        // Method to retrieve players
         public List<string> Players
         {
             get
@@ -43,13 +43,13 @@ namespace CreatorsGUI {
             }
 
         }
-        // Tässä voit tallentaa pelaajia, esimerkiksi nappia klikattaessa
+        // you can save up players here.
         private void button6_Click_1(object sender, EventArgs e) {
             List<string> players = new List<string>();
 
             List<TextBox> playerTextBoxes = new List<TextBox>();
             List<TextBox> semifinalTextBoxes = new List<TextBox>();
-            // Tallenna pelaajat johonkin tietorakenteeseen, esim. List<string>
+            // Save the players to data infrastructure, example. List<string>
             players.Add(p1.Text);
             players.Add(p2.Text);
             players.Add(p3.Text);
@@ -61,9 +61,9 @@ namespace CreatorsGUI {
             players.Add(p9.Text);
             players.Add(p10.Text);
 
-            // Add other checkboxes in a similar way
+         
 
-            // Save the selected value of ComboBox1
+            // Save the selected values of additional information
 
             try {
                 string tournamentName = TournamentNameBox.Text.Trim();
@@ -86,13 +86,7 @@ namespace CreatorsGUI {
                 tournamentInfo += $"{tournamentName}";
 
 
-                /*       round += $"\nRounds: {round}\n";
-
-
-                       map += $"\nMap: {map}\n";
-
-
-                       EntryFee += $"\nEntry Fee:{EntryFee}\n\n";*/
+         
 
 
                 // Save tournament information to a file
@@ -104,7 +98,7 @@ namespace CreatorsGUI {
 
                 MessageBox.Show("thank you, players recorded into tournament!");
 
-                // Päivitä myös Finals-formissa
+                // Update this in Finals Form
                 Finals finalsForm = new Finals(this, players);
 
                 finalsForm.Show();
