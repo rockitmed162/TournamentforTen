@@ -17,14 +17,14 @@ alternative mirror
 Source Download: https://file.io/FGGK4mGWfBDN
 --
 (CreatorsGUI.cs is not viewable as Designer Mode, because at the begin of CreatorsGUI.cs
--
+
 namespace CreatorsGUI {
 /*
 public static class AppData {
 public static CreatorsGUI CreatorsGUIForm { get; set; }
 
 }*/
---
+-
 you must first comment out this after this you are able to view it normally, remember to uncomment it after you are done. )
 
 Database Patches(this checks the UGradeID via database):
