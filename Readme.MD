@@ -42,3 +42,59 @@ Manually Update all the users in login table:
     SET ugradeid = 0;
 
 --
+Same Method, Without Required Modifications to database here copy and paste to replace the current method on CreatorsGUI.cs Login_Click with this.
+(checks only userid and password are correct)
+        private void Login_Click(object sender, EventArgs e) {
+            //this version is minimalized security check for login credentials without the modifications in database.
+            //Update SQL connection strings for Username/Password/DB/Server to match yours.
+            string connectionString = "Data Source=jop\\mssqlserver02;Initial Catalog=GunzDB;Persist Security Info=True;User ID=sa;Password=Asdasd12!;Encrypt=False";
+
+            using (SqlConnection con = new SqlConnection(connectionString)) {
+                con.Open();
+                try {
+                    using (SqlCommand loginCmd = new SqlCommand("SELECT * FROM Login WHERE userid=@UserID AND password=@Password", con)) {
+                        loginCmd.Parameters.AddWithValue("@UserID", User.Text);
+                        loginCmd.Parameters.AddWithValue("@Password", Pass.Text);
+
+                        using (SqlDataReader loginReader = loginCmd.ExecuteReader()) {
+                            if (loginReader.Read()) // Check if the login query returns any rows
+                            {
+                                //     int uGradeID = Convert.ToInt32(loginReader["UGradeID"]);
+                                //
+                                //   if (uGradeID == 0) //0 = Normal User
+                                //     {
+                                // Member login logic
+                                // Handle session or user details as required
+                                Start.Enabled = true;
+                                MessageBox.Show("Login successful!");
+                                return;
+                            }
+                            /*
+                                    else if (uGradeID == 255) {
+                                        // Admin login logic
+                                        // Handle session or user details as required
+                                        MessageBox.Show("Logged in as an admin.");
+                                        return;
+                                    }*/
+                            /*    else {
+                                MessageBox.Show("Invalid credentials or account type.");
+                                // Handle invalid credentials or account type
+                                return;
+                            }
+                            */
+                            else {
+                                MessageBox.Show("Invalid credentials.");
+                                // Handle invalid credentials
+                                return;
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex) {
+                    MessageBox.Show($"An error occurred: {ex.Message}");
+                }
+            }
+        }
+    }
+}
+--
