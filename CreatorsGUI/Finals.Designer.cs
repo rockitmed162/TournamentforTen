@@ -83,13 +83,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Map0 = new System.Windows.Forms.TextBox();
             this.Name = new System.Windows.Forms.TextBox();
             this.Rnd = new System.Windows.Forms.TextBox();
             this.entryfees = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
@@ -501,7 +501,7 @@
             this.e1.TabIndex = 3;
             this.e1.Text = "+";
             this.e1.UseVisualStyleBackColor = true;
-            this.e1.Click += new System.EventHandler(this.e1_Click);
+            this.e1.Click += new System.EventHandler(this.E1_Click);
             // 
             // e2
             // 
@@ -512,7 +512,7 @@
             this.e2.TabIndex = 3;
             this.e2.Text = "+";
             this.e2.UseVisualStyleBackColor = true;
-            this.e2.Click += new System.EventHandler(this.e2_Click);
+            this.e2.Click += new System.EventHandler(this.E2_Click);
             // 
             // e7
             // 
@@ -523,7 +523,7 @@
             this.e7.TabIndex = 3;
             this.e7.Text = "+";
             this.e7.UseVisualStyleBackColor = true;
-            this.e7.Click += new System.EventHandler(this.e7_Click);
+            this.e7.Click += new System.EventHandler(this.E7_Click);
             // 
             // e3
             // 
@@ -534,7 +534,7 @@
             this.e3.TabIndex = 3;
             this.e3.Text = "+";
             this.e3.UseVisualStyleBackColor = true;
-            this.e3.Click += new System.EventHandler(this.e3_Click);
+            this.e3.Click += new System.EventHandler(this.E3_Click);
             // 
             // e8
             // 
@@ -545,7 +545,7 @@
             this.e8.TabIndex = 3;
             this.e8.Text = "+";
             this.e8.UseVisualStyleBackColor = true;
-            this.e8.Click += new System.EventHandler(this.e8_Click);
+            this.e8.Click += new System.EventHandler(this.E8_Click);
             // 
             // e4
             // 
@@ -556,7 +556,7 @@
             this.e4.TabIndex = 3;
             this.e4.Text = "+";
             this.e4.UseVisualStyleBackColor = true;
-            this.e4.Click += new System.EventHandler(this.e4_Click);
+            this.e4.Click += new System.EventHandler(this.E4_Click);
             // 
             // e9
             // 
@@ -567,7 +567,7 @@
             this.e9.TabIndex = 3;
             this.e9.Text = "+";
             this.e9.UseVisualStyleBackColor = true;
-            this.e9.Click += new System.EventHandler(this.e9_Click);
+            this.e9.Click += new System.EventHandler(this.E9_Click);
             // 
             // e10
             // 
@@ -578,7 +578,7 @@
             this.e10.TabIndex = 3;
             this.e10.Text = "+";
             this.e10.UseVisualStyleBackColor = true;
-            this.e10.Click += new System.EventHandler(this.e10_Click);
+            this.e10.Click += new System.EventHandler(this.E10_Click);
             // 
             // e5
             // 
@@ -589,7 +589,7 @@
             this.e5.TabIndex = 3;
             this.e5.Text = "+";
             this.e5.UseVisualStyleBackColor = true;
-            this.e5.Click += new System.EventHandler(this.e5_Click);
+            this.e5.Click += new System.EventHandler(this.E5_Click);
             // 
             // e6
             // 
@@ -600,7 +600,7 @@
             this.e6.TabIndex = 3;
             this.e6.Text = "+";
             this.e6.UseVisualStyleBackColor = true;
-            this.e6.Click += new System.EventHandler(this.e6_Click);
+            this.e6.Click += new System.EventHandler(this.E6_Click);
             // 
             // button9
             // 
@@ -615,7 +615,7 @@
             this.button9.TabIndex = 3;
             this.button9.Text = "=>";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
             // button5
             // 
@@ -630,7 +630,7 @@
             this.button5.TabIndex = 3;
             this.button5.Text = "=>";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button1
             // 
@@ -645,7 +645,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "=>";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button3
             // 
@@ -660,7 +660,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "=>";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button6
             // 
@@ -675,7 +675,7 @@
             this.button6.TabIndex = 3;
             this.button6.Text = "=>";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // toolStripContainer1
             // 
@@ -742,8 +742,8 @@
             this.toolStripContainer1.ContentPanel.Controls.Add(this.textBoxPlayer1);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.textBoxPlayer2);
             this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(875, 389);
-            this.toolStripContainer1.ContentPanel.Load += new System.EventHandler(this.toolStripContainer1_ContentPanel_Load);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(875, 364);
+            this.toolStripContainer1.ContentPanel.Load += new System.EventHandler(this.ToolStripContainer1_ContentPanel_Load);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(2);
@@ -797,6 +797,20 @@
             this.label8.Size = new System.Drawing.Size(133, 16);
             this.label8.TabIndex = 1;
             this.label8.Text = "Tournament Name:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label12.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(245, 83);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(117, 16);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Click to Refresh";
             // 
             // label9
             // 
@@ -883,21 +897,7 @@
             this.entryfees.TabIndex = 0;
             this.entryfees.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.entryfees.Click += new System.EventHandler(this.Form_Load);
-            this.entryfees.TextChanged += new System.EventHandler(this.entryfees_TextChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(245, 83);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 16);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Click to Refresh";
+            this.entryfees.TextChanged += new System.EventHandler(this.Entryfees_TextChanged);
             // 
             // Finals
             // 
@@ -909,7 +909,7 @@
             this.ClientSize = new System.Drawing.Size(875, 389);
             this.Controls.Add(this.toolStripContainer1);
             this.Margin = new System.Windows.Forms.Padding(2);
-             this.Text = "Tournament Interface";
+            this.Text = "Tournament Interface";
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.ContentPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);

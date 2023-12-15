@@ -33,10 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -62,6 +67,19 @@
     <Compile Include="Finals.Designer.cs">
       <DependentUpon>Finals.cs</DependentUpon>
     </Compile>
+    <Compile Include="GunzDBDataSet.cs">
+      <DependentUpon>GunzDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GunzDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GunzDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GunzDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GunzDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CreatorsGUI.resx">
@@ -78,11 +96,43 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="GunzDBDataSet.xsc">
+      <DependentUpon>GunzDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GunzDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GunzDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GunzDBDataSet.xss">
+      <DependentUpon>GunzDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GunzDBDataSet1.xsc">
+      <DependentUpon>GunzDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GunzDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GunzDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GunzDBDataSet1.xss">
+      <DependentUpon>GunzDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\DataSources\CreatorsGUI.datasource" />
+    <None Include="Properties\DataSources\CreatorsGUI.GunzDBDataSetTableAdapters.LoginTableAdapter.datasource" />
+    <None Include="Properties\DataSources\CreatorsGUI.GunzDBDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\CreatorsGUI.GunzDBDataSetTableAdapters.TableAdapterManager.datasource" />
     <None Include="Properties\DataSources\CreatorsGUI.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\CreatorsGUI.Properties.Settings.datasource" />
     <None Include="Properties\DataSources\Finals.datasource" />
+    <None Include="Properties\DataSources\GunzDBDataSet.datasource" />
+    <None Include="Properties\DataSources\GunzDBDataSet.LoginDataTable.datasource" />
+    <None Include="Properties\DataSources\GunzDBDataSet.LoginRow.datasource" />
+    <None Include="Properties\DataSources\GunzDBDataSet.LoginRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\GunzDBDataSet.LoginRowChangeEventHandler.datasource" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +155,14 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled_canaltown_canaltown_main_cafe_a_12_mt_con.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient">
+      <Version>5.1.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

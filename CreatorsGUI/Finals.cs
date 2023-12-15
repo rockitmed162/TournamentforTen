@@ -256,79 +256,79 @@ namespace CreatorsGUI
 
         }
 
-        private void e1_Click(object sender, EventArgs e)
+        private void E1_Click(object sender, EventArgs e)
         {
             Q1.Text = textBoxPlayer1.Text;
     
            
         }
 
-        private void e2_Click(object sender, EventArgs e)
+        private void E2_Click(object sender, EventArgs e)
         {
             Q1.Text = textBoxPlayer2.Text;
         }
 
-        private void e3_Click(object sender, EventArgs e)
+        private void E3_Click(object sender, EventArgs e)
         {
             Q2.Text = textBoxPlayer3.Text;
         }
 
-        private void e4_Click(object sender, EventArgs e)
+        private void E4_Click(object sender, EventArgs e)
         {
             Q2.Text = textBoxPlayer4.Text;
         }
 
-        private void e5_Click(object sender, EventArgs e)
+        private void E5_Click(object sender, EventArgs e)
         {
             Q3.Text = textBoxPlayer5.Text;
         }
 
-        private void e6_Click(object sender, EventArgs e)
+        private void E6_Click(object sender, EventArgs e)
         {
             Q3.Text = textBoxPlayer6.Text;
         }
 
-        private void e7_Click(object sender, EventArgs e)
+        private void E7_Click(object sender, EventArgs e)
         {
             Q4.Text = textBoxPlayer7.Text;
         }
 
-        private void e8_Click(object sender, EventArgs e)
+        private void E8_Click(object sender, EventArgs e)
         {
             Q4.Text = textBoxPlayer8.Text;
         }
 
-        private void e9_Click(object sender, EventArgs e)
+        private void E9_Click(object sender, EventArgs e)
         {
             Q5.Text = textBoxPlayer9.Text;
         }
 
-        private void e10_Click(object sender, EventArgs e)
+        private void E10_Click(object sender, EventArgs e)
         {
             Q5.Text = textBoxPlayer10.Text;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             textBox23.Text = Q4.Text;  
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             textBox24.Text = Q3.Text;
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void Button9_Click(object sender, EventArgs e)
         {
             textBox22.Text = Q2.Text;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void Button6_Click(object sender, EventArgs e)
         {
             textBox23.Text = Q5.Text;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
             textBox22.Text = Q1.Text;
         }
@@ -369,7 +369,7 @@ namespace CreatorsGUI
         private void Tnames_TextChanged(object sender, EventArgs e) {
         }
 
-        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e) {
+        private void ToolStripContainer1_ContentPanel_Load(object sender, EventArgs e) {
 
         }
 
@@ -388,7 +388,7 @@ namespace CreatorsGUI
             Rnd.Text = rnd;
         }
 
-        private void entryfees_TextChanged(object sender, EventArgs e) {
+        private void Entryfees_TextChanged(object sender, EventArgs e) {
            
             string bet = File.Exists("EntryFee.txt") ? File.ReadAllText("EntryFee.Txt") : "o";
             entryfees.Text = bet;

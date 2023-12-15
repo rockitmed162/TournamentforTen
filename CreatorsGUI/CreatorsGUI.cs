@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -16,25 +17,25 @@ using System.Windows.Forms.VisualStyles;
 using static CreatorsApplication.TournamentLogic;
 
 namespace CreatorsGUI {
- public static class AppData {
+    public static class AppData {
         public static CreatorsGUI CreatorsGUIForm { get; set; }
-   
-   }
+
+    }
     public partial class CreatorsGUI : Form {
         WebClient webClient;
         string updateURL = "http://localhost/updates/update"; // Replace with your update file URL (without file extension) & if its problematic and you need multiple files updates(one way is to add .zip or multiply the updateurl lines for eachfile.
-        string updateFilePath = @""; // Destination to save updated file. currently the files are saved into same directory as the application.
+        string updateFilePath = @""; // Destination to save updated file
 
         private List<string> players = new List<string>();
 
         public CreatorsGUI() {
             InitializeComponent();
 
-
-
+            this.Login.Click += new System.EventHandler(this.Login_Click);
+            Start.Enabled = false;
 
         }
-        // Method to retrieve players
+        // Metodi pelaajien hakemiseksi
         public List<string> Players
         {
             get
@@ -43,13 +44,13 @@ namespace CreatorsGUI {
             }
 
         }
-        // you can save up players here.
+        // Tässä voit tallentaa pelaajia, esimerkiksi nappia klikattaessa
         private void button6_Click_1(object sender, EventArgs e) {
             List<string> players = new List<string>();
 
             List<TextBox> playerTextBoxes = new List<TextBox>();
             List<TextBox> semifinalTextBoxes = new List<TextBox>();
-            // Save the players to data infrastructure, example. List<string>
+            // Tallenna pelaajat johonkin tietorakenteeseen, esim. List<string>
             players.Add(p1.Text);
             players.Add(p2.Text);
             players.Add(p3.Text);
@@ -61,9 +62,9 @@ namespace CreatorsGUI {
             players.Add(p9.Text);
             players.Add(p10.Text);
 
-         
+            // Add other checkboxes in a similar way
 
-            // Save the selected values of additional information
+            // Save the selected value of ComboBox1
 
             try {
                 string tournamentName = TournamentNameBox.Text.Trim();
@@ -86,7 +87,13 @@ namespace CreatorsGUI {
                 tournamentInfo += $"{tournamentName}";
 
 
-         
+                /*       round += $"\nRounds: {round}\n";
+
+
+                       map += $"\nMap: {map}\n";
+
+
+                       EntryFee += $"\nEntry Fee:{EntryFee}\n\n";*/
 
 
                 // Save tournament information to a file
@@ -98,7 +105,7 @@ namespace CreatorsGUI {
 
                 MessageBox.Show("thank you, players recorded into tournament!");
 
-                // Update this in Finals Form
+                // Päivitä myös Finals-formissa
                 Finals finalsForm = new Finals(this, players);
 
                 finalsForm.Show();
@@ -148,7 +155,8 @@ namespace CreatorsGUI {
                     Uri updateUri = new Uri(updateURL);
                     client.OpenReadAsync(updateUri); // Aloita pyyntö asynkronisesti
 
-                    client.OpenReadCompleted += (s, args) => {
+                    client.OpenReadCompleted += (s, args) =>
+                    {
                         if (args.Error != null) {
                             MessageBox.Show("Error checking updates: " + args.Error.Message, "Update Check", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
@@ -197,6 +205,68 @@ namespace CreatorsGUI {
             }
             else {
                 MessageBox.Show("Download completed", "Update Download", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void User_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void Pass_TextChanged(object sender, EventArgs e) {
+
+        }
+
+
+        private void Login_Click(object sender, EventArgs e) {
+
+            //Update SQL connection strings for Username/Password/DB/Server to match yours.
+            string connectionString = "Data Source=jop\\mssqlserver02;Initial Catalog=GunzDB;Persist Security Info=True;User ID=sa;Password=Asdasd12!;Encrypt=False";
+
+            using (SqlConnection con = new SqlConnection(connectionString)) {
+                con.Open();
+                try {
+                    using (SqlCommand loginCmd = new SqlCommand("SELECT * FROM Login WHERE userid=@UserID AND password=@Password", con)) {
+                        loginCmd.Parameters.AddWithValue("@UserID", User.Text);
+                        loginCmd.Parameters.AddWithValue("@Password", Pass.Text);
+
+                        using (SqlDataReader loginReader = loginCmd.ExecuteReader()) {
+                            if (loginReader.Read()) // Check if the login query returns any rows
+                            {
+                                int uGradeID = Convert.ToInt32(loginReader["UGradeID"]);
+
+                                if (uGradeID == 0) //0 = Normal User
+                                {
+                                    // Member login logic
+                                    // Handle session or user details as required
+                                    Start.Enabled = true;
+                                    MessageBox.Show("Login successful!");
+                                 
+                                    return;
+                                }
+                                else if (uGradeID == 255) {
+                                    // Admin login logic
+                                    // Handle session or user details as required
+                                    MessageBox.Show("Logged in as an admin.");
+                                    return;
+                                }
+                                else {
+                                    MessageBox.Show("Invalid credentials or account type.");
+                                    // Handle invalid credentials or account type
+                                    return;
+                                }
+                            }
+                            else {
+                                MessageBox.Show("Invalid credentials.");
+                                // Handle invalid credentials
+                                return;
+
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex) {
+                    MessageBox.Show($"An error occurred: {ex.Message}");
+                }
             }
         }
     }

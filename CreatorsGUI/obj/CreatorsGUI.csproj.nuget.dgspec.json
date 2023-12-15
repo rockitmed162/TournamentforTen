@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsGUI\\CreatorsGUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsApplication\\CreatorsApplication.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsApplication\\CreatorsApplication.csproj",
+        "projectName": "CreatorsApplication",
+        "projectPath": "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsApplication\\CreatorsApplication.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsGUI\\CreatorsGUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsGUI\\CreatorsGUI.csproj",
+        "projectName": "CreatorsGUI",
+        "projectPath": "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsGUI\\CreatorsGUI.csproj",
+        "packagesPath": "C:\\Users\\jop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsGUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsApplication\\CreatorsApplication.csproj": {
+                "projectPath": "C:\\Users\\jop\\source\\repos\\kansio\\CreatorsApplication\\CreatorsApplication.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
