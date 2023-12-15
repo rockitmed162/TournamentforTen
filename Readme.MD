@@ -41,8 +41,7 @@ Manually Update all the users in login table:
     UPDATE Login
     SET ugradeid = 0;
 
--
---
+
 Same Method, Without Required Modifications to database here copy and paste to replace the current method on CreatorsGUI.cs Login_Click with this.
 (checks only userid and password are correct)
         private void Login_Click(object sender, EventArgs e) {
