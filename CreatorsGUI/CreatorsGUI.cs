@@ -221,14 +221,15 @@ namespace CreatorsGUI {
 
             //Update SQL connection strings for Username/Password/DB/Server to match yours.
             string connectionString = "Data Source=jop\\mssqlserver02;Initial Catalog=GunzDB;Persist Security Info=True;User ID=sa;Password=Asdasd12!;Encrypt=False";
-
+            string UserPass = Pass.Text;
+            string Username = User.Text;
             using (SqlConnection con = new SqlConnection(connectionString)) {
                 con.Open();
                 try {
                     using (SqlCommand loginCmd = new SqlCommand("SELECT * FROM Login WHERE userid=@UserID AND password=@Password", con)) {
-                        loginCmd.Parameters.AddWithValue("@UserID", User.Text);
-                        loginCmd.Parameters.AddWithValue("@Password", Pass.Text);
-
+                        loginCmd.Parameters.AddWithValue("@UserID", Username);
+                        loginCmd.Parameters.AddWithValue("@Password", UserPass);
+                         
                         using (SqlDataReader loginReader = loginCmd.ExecuteReader()) {
                             if (loginReader.Read()) // Check if the login query returns any rows
                             {
