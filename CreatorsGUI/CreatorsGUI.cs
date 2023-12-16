@@ -302,6 +302,7 @@ namespace CreatorsGUI {
                                     }
 
                                     if (AID != -1) {
+                                       // comment UGradeID out if you are not using Database with UGradeID value in Login table.
                                         using (SqlCommand RegisterLogin = new SqlCommand("INSERT INTO Login(UserID, AID, UGradeID, Password) VALUES (@UserID, @AID, 0, @Password)", con)) {
                                             RegisterLogin.Parameters.AddWithValue("@UserID", userID);
                                             RegisterLogin.Parameters.AddWithValue("@Password", password);
