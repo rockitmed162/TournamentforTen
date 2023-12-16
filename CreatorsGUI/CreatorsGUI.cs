@@ -17,13 +17,14 @@ using System.Windows.Forms.VisualStyles;
 using static CreatorsApplication.TournamentLogic;
 
 namespace CreatorsGUI {
+   /* To Enable Design View on Visual studio to edit Forms, comment out this part temporally and uncomment after your design is ready.*/
    public static class AppData {
         public static CreatorsGUI CreatorsGUIForm { get; set; }
-
     }
+   /* from comment above down to this comment must be commented out*/
     public partial class CreatorsGUI : Form {
         WebClient webClient;
-        string updateURL = "http://localhost/updates/update"; // Replace with your update file URL (without file extension) & if its problematic and you need multiple files updates(one way is to add .zip or multiply the updateurl lines for eachfile.
+        string updateURL = "http://localhost/updates/thefiletoupdate"; // Replace with your update file URL (without file extension) & if its problematic and you need multiple files updates(one way is to add .zip or multiply the updateurl lines for eachfile.
         string updateFilePath = @""; // Destination to save updated file
 
         private List<string> players = new List<string>();
