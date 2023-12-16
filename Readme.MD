@@ -1,4 +1,6 @@
 Hello, Its Me Nena Beaner, i just wanted to say hi.
+Version 2.0 (Latest)
+--
 preview:
 ![kuva](https://github.com/rockitmed162/TournamentforTen/assets/127537866/57eef64b-4700-4f54-9d04-11d25280e1cb)
  
