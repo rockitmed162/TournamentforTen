@@ -17,7 +17,7 @@ using System.Windows.Forms.VisualStyles;
 using static CreatorsApplication.TournamentLogic;
 
 namespace CreatorsGUI {
-    public static class AppData {
+   public static class AppData {
         public static CreatorsGUI CreatorsGUIForm { get; set; }
 
     }
@@ -219,6 +219,7 @@ namespace CreatorsGUI {
 
         private void Login_Click(object sender, EventArgs e) {
 
+            //this version is minimalized security check for login credentials without the modifications in database.
             //Update SQL connection strings for Username/Password/DB/Server to match yours.
             string connectionString = "Data Source=jop\\mssqlserver02;Initial Catalog=GunzDB;Persist Security Info=True;User ID=sa;Password=Asdasd12!;Encrypt=False";
             string UserPass = Pass.Text;
@@ -229,44 +230,111 @@ namespace CreatorsGUI {
                     using (SqlCommand loginCmd = new SqlCommand("SELECT * FROM Login WHERE userid=@UserID AND password=@Password", con)) {
                         loginCmd.Parameters.AddWithValue("@UserID", Username);
                         loginCmd.Parameters.AddWithValue("@Password", UserPass);
-                         
+
                         using (SqlDataReader loginReader = loginCmd.ExecuteReader()) {
                             if (loginReader.Read()) // Check if the login query returns any rows
                             {
-                                int uGradeID = Convert.ToInt32(loginReader["UGradeID"]);
-
-                                if (uGradeID == 0) //0 = Normal User
-                                {
-                                    // Member login logic
-                                    // Handle session or user details as required
-                                    Start.Enabled = true;
-                                    MessageBox.Show("Login successful!");
-                                 
-                                    return;
-                                }
-                                else if (uGradeID == 255) {
-                                    // Admin login logic
-                                    // Handle session or user details as required
-                                    MessageBox.Show("Logged in as an admin.");
-                                    return;
-                                }
-                                else {
-                                    MessageBox.Show("Invalid credentials or account type.");
-                                    // Handle invalid credentials or account type
-                                    return;
-                                }
+                                //     int uGradeID = Convert.ToInt32(loginReader["UGradeID"]);
+                                //
+                                //   if (uGradeID == 0) //0 = Normal User
+                                //     {
+                                // Member login logic
+                                // Handle session or user details as required
+                                Start.Enabled = true;
+                                MessageBox.Show("Login successful!");
+                                return;
                             }
+                            /*
+                                    else if (uGradeID == 255) {
+                                        // Admin login logic
+                                        // Handle session or user details as required
+                                        MessageBox.Show("Logged in as an admin.");
+                                        return;
+                                    }*/
+                            /*    else {
+                                MessageBox.Show("Invalid credentials or account type.");
+                                // Handle invalid credentials or account type
+                                return;
+                            }
+                            */
                             else {
                                 MessageBox.Show("Invalid credentials.");
                                 // Handle invalid credentials
                                 return;
-
                             }
                         }
                     }
                 }
                 catch (Exception ex) {
                     MessageBox.Show($"An error occurred: {ex.Message}");
+                }
+            }
+        }
+        private void Register_Click(object sender, EventArgs e) {
+            if (Regcheck.Checked) // Check if the checkbox is checked
+   {
+                string userID = Reguser.Text;
+                string password = Regpass.Text;
+
+                if (userID.Length > 4 && password.Length > 4) {
+                    //Update SQL connection strings for Username/Password/DB/Server to match yours.
+                    string connectionString = "Data Source=jop\\mssqlserver02;Initial Catalog=GunzDB;Persist Security Info=True;User ID=sa;Password=Asdasd12!;Encrypt=False";
+
+                    using (SqlConnection con = new SqlConnection(connectionString)) {
+                        con.Open();
+                        try {
+                            using (SqlCommand RegisterAccount = new SqlCommand("INSERT INTO Account (UserID, Name, UGradeID, PGradeID, RegDate) VALUES (@UserID, @Name, 0, 0, GETDATE())", con)) {
+                                RegisterAccount.Parameters.AddWithValue("@Name", userID);
+                                RegisterAccount.Parameters.AddWithValue("@UserID", userID);
+
+                                int rowsAffectedAccount = RegisterAccount.ExecuteNonQuery();
+
+                                if (rowsAffectedAccount > 0) {
+                                    int AID = -1;
+
+                                    using (SqlCommand getAIDCmd = new SqlCommand("SELECT AID FROM Account WHERE UserID = @UserID", con)) {
+                                        getAIDCmd.Parameters.AddWithValue("@UserID", userID);
+
+                                        object result = getAIDCmd.ExecuteScalar();
+                                        if (result != null && result != DBNull.Value) {
+                                            AID = Convert.ToInt32(result);
+                                        }
+                                    }
+
+                                    if (AID != -1) {
+                                        using (SqlCommand RegisterLogin = new SqlCommand("INSERT INTO Login(UserID, AID, UGradeID, Password) VALUES (@UserID, @AID, 0, @Password)", con)) {
+                                            RegisterLogin.Parameters.AddWithValue("@UserID", userID);
+                                            RegisterLogin.Parameters.AddWithValue("@Password", password);
+                                            RegisterLogin.Parameters.AddWithValue("@AID", AID);
+
+                                            int rowsAffectedLogin = RegisterLogin.ExecuteNonQuery();
+
+                                            if (rowsAffectedLogin > 0) {
+                                                MessageBox.Show($"Welcome, Your account has been created! Credentials are UserName '{userID}' and Password '{password}'");
+                                                // Redirect or show a success message, as needed in Windows Forms
+
+                                                // For example, redirecting to another form
+                                                // YourFormName form = new YourFormName();
+                                                // form.Show();
+                                            }
+                                            else {
+                                                MessageBox.Show("Error: Login credentials creation failed.");
+                                            }
+                                        }
+                                    }
+                                    else {
+                                        MessageBox.Show("Error: Account creation failed. Please try again later.");
+                                    }
+                                }
+                                else {
+                                    MessageBox.Show("Error: User ID and Password must have more than 4 characters.");
+                                }
+                            }
+                        }
+                        catch (Exception ex) {
+                            MessageBox.Show($"An error occurred: {ex.Message}");
+                        }
+                    }
                 }
             }
         }

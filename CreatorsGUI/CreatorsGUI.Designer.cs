@@ -72,15 +72,21 @@
             this.Login = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Register = new System.Windows.Forms.Button();
+            this.Regpass = new System.Windows.Forms.TextBox();
+            this.Reguser = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Regcheck = new System.Windows.Forms.CheckBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
-         
             this.SuspendLayout();
             // 
             // label1
@@ -655,68 +661,194 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
             this.dataGridView1.DataSource = this.loginBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(482, 43);
+            this.dataGridView1.Location = new System.Drawing.Point(610, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(137, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(13, 10);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.Visible = false;
             // 
             // loginBindingSource
             // 
             this.loginBindingSource.DataMember = "Login";
-          
             // 
-            // gunzDBDataSet1
+            // Register
             // 
-         
+            this.Register.AutoEllipsis = true;
+            this.Register.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Register.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Register.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Register.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Register.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Register.Font = new System.Drawing.Font("MS PGothic", 4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.Register.ForeColor = System.Drawing.Color.Navy;
+            this.Register.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Register.Location = new System.Drawing.Point(484, 104);
+            this.Register.Name = "Register";
+            this.Register.Size = new System.Drawing.Size(136, 41);
+            this.Register.TabIndex = 5;
+            this.Register.Text = "REGISTER";
+            this.Register.UseVisualStyleBackColor = false;
+            this.Register.Click += new System.EventHandler(this.Register_Click);
             // 
-            // dataGridViewTextBoxColumn1
+            // Regpass
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "UserID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "UserID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.Regpass.BackColor = System.Drawing.Color.DarkOrange;
+            this.Regpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Regpass.Location = new System.Drawing.Point(484, 77);
+            this.Regpass.Margin = new System.Windows.Forms.Padding(2);
+            this.Regpass.MaxLength = 20;
+            this.Regpass.Name = "Regpass";
+            this.Regpass.PasswordChar = '§';
+            this.Regpass.Size = new System.Drawing.Size(136, 20);
+            this.Regpass.TabIndex = 3;
+            this.Regpass.UseSystemPasswordChar = true;
             // 
-            // dataGridViewTextBoxColumn2
+            // Reguser
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "AID";
-            this.dataGridViewTextBoxColumn2.HeaderText = "AID";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.Reguser.BackColor = System.Drawing.Color.DarkOrange;
+            this.Reguser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Reguser.Location = new System.Drawing.Point(484, 52);
+            this.Reguser.Margin = new System.Windows.Forms.Padding(2);
+            this.Reguser.MaxLength = 14;
+            this.Reguser.Name = "Reguser";
+            this.Reguser.Size = new System.Drawing.Size(136, 20);
+            this.Reguser.TabIndex = 3;
             // 
-            // dataGridViewTextBoxColumn3
+            // label20
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Password";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Password";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label20.Font = new System.Drawing.Font("Verdana", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(411, 85);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(69, 14);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Password";
             // 
-            // dataGridViewTextBoxColumn4
+            // label21
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "LastConnDate";
-            this.dataGridViewTextBoxColumn4.HeaderText = "LastConnDate";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label21.Font = new System.Drawing.Font("Verdana", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(411, 54);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(71, 14);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "Username";
             // 
-            // dataGridViewTextBoxColumn5
+            // textBox3
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "LastIP";
-            this.dataGridViewTextBoxColumn5.HeaderText = "LastIP";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.textBox3.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox3.Font = new System.Drawing.Font("Verdana", 7.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.White;
+            this.textBox3.Location = new System.Drawing.Point(381, 199);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(242, 201);
+            this.textBox3.TabIndex = 8;
+            this.textBox3.Text = "News:";
             // 
-            // dataGridViewTextBoxColumn6
+            // label22
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "UGradeID";
-            this.dataGridViewTextBoxColumn6.HeaderText = "UGradeID";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label22.Font = new System.Drawing.Font("Verdana", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(378, 182);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(120, 14);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Client Information";
             // 
-            // loginTableAdapter
+            // Regcheck
             // 
-           
+            this.Regcheck.AutoSize = true;
+            this.Regcheck.Location = new System.Drawing.Point(395, 131);
+            this.Regcheck.Name = "Regcheck";
+            this.Regcheck.Size = new System.Drawing.Size(87, 17);
+            this.Regcheck.TabIndex = 9;
+            this.Regcheck.Text = "I Understand";
+            this.Regcheck.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label23.Font = new System.Drawing.Font("Verdana", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label23.Location = new System.Drawing.Point(276, 53);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(76, 14);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "1.No hacks";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label24.Font = new System.Drawing.Font("Verdana", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label24.Location = new System.Drawing.Point(276, 105);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(89, 14);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "3.Read Rules";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label25.Font = new System.Drawing.Font("Verdana", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label25.Location = new System.Drawing.Point(276, 80);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(104, 14);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "2.Be Respectful";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label26.Font = new System.Drawing.Font("Verdana", 3F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label26.Location = new System.Drawing.Point(276, 131);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 14);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "4.No Advertising";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label27.Font = new System.Drawing.Font("Niagara Solid", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label27.Location = new System.Drawing.Point(482, 25);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(54, 23);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Sign-Up:";
             // 
             // CreatorsGUI
             // 
@@ -730,11 +862,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.CancelButton = this.btnDownload;
             this.ClientSize = new System.Drawing.Size(631, 558);
+            this.Controls.Add(this.Regcheck);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.btnCheckUpdates);
             this.Controls.Add(this.btnDownload);
+            this.Controls.Add(this.Register);
             this.Controls.Add(this.Start);
             this.Controls.Add(this.mapbox);
             this.Controls.Add(this.roundbox);
@@ -742,7 +877,9 @@
             this.Controls.Add(this.p9);
             this.Controls.Add(this.Entryfee);
             this.Controls.Add(this.p5);
+            this.Controls.Add(this.Reguser);
             this.Controls.Add(this.p7);
+            this.Controls.Add(this.Regpass);
             this.Controls.Add(this.p3);
             this.Controls.Add(this.p8);
             this.Controls.Add(this.p4);
@@ -758,7 +895,14 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label19);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.label17);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label15);
@@ -770,10 +914,11 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label27);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.NoMove2D;
-            this.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.ForeColor = System.Drawing.Color.ForestGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -784,10 +929,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tournament Configuration";
-        
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
-       
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -853,6 +996,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Button Login;
-
+        private System.Windows.Forms.Button Register;
+        private System.Windows.Forms.TextBox Regpass;
+        private System.Windows.Forms.TextBox Reguser;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.CheckBox Regcheck;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        public System.Windows.Forms.Label label27;
     }
 }
