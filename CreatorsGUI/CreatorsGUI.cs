@@ -44,13 +44,13 @@ namespace CreatorsGUI {
             }
 
         }
-        // Tässä voit tallentaa pelaajia, esimerkiksi nappia klikattaessa
+        // Here you can save players, for example when a button is clicked
         private void button6_Click_1(object sender, EventArgs e) {
             List<string> players = new List<string>();
 
             List<TextBox> playerTextBoxes = new List<TextBox>();
             List<TextBox> semifinalTextBoxes = new List<TextBox>();
-            // Tallenna pelaajat johonkin tietorakenteeseen, esim. List<string>
+            // Store the players in some data structure, example. List<string>
             players.Add(p1.Text);
             players.Add(p2.Text);
             players.Add(p3.Text);
@@ -105,7 +105,7 @@ namespace CreatorsGUI {
 
                 MessageBox.Show("thank you, players recorded into tournament!");
 
-                // Päivitä myös Finals-formissa
+                // Also update in the Finals form
                 Finals finalsForm = new Finals(this, players);
 
                 finalsForm.Show();
@@ -153,7 +153,7 @@ namespace CreatorsGUI {
             try {
                 using (WebClient client = new WebClient()) {
                     Uri updateUri = new Uri(updateURL);
-                    client.OpenReadAsync(updateUri); // Aloita pyyntö asynkronisesti
+                    client.OpenReadAsync(updateUri); // Start the request asynchronously
 
                     client.OpenReadCompleted += (s, args) =>
                     {
@@ -219,7 +219,7 @@ namespace CreatorsGUI {
 
         private void Login_Click(object sender, EventArgs e) {
 
-            //this version is minimalized security check for login credentials without the modifications in database.
+            //This version is minimalized security check for login credentials without the modifications in database.
             //Update SQL connection strings for Username/Password/DB/Server to match yours.
             string connectionString = "Data Source=jop\\mssqlserver02;Initial Catalog=GunzDB;Persist Security Info=True;User ID=sa;Password=Asdasd12!;Encrypt=False";
             string UserPass = Pass.Text;
@@ -244,7 +244,9 @@ namespace CreatorsGUI {
                                 MessageBox.Show("Login successful!");
                                 return;
                             }
-                            /*
+                           //to use UgradeID checks on loginning, you must uncomment this section and also do the changes into database, login table needs field UGradeID , Int datatype. 
+                           //Stored Procs need changes to sp_insertaccount with UgradeID value to "Insert Into Login" part, then  all new accounts adds ugradeid 0 value to login table users.
+                           /*
                                     else if (uGradeID == 255) {
                                         // Admin login logic
                                         // Handle session or user details as required
