@@ -16,8 +16,6 @@ these settings can always be changed in the source code, see CreatorsGUI.cs at t
 
 for now, this version is not necessarily intended for beginners, it requires a little knowledge.
 -
-alternative mirror
-Source Download: https://file.io/FGGK4mGWfBDN
 
 (CreatorsGUI.cs is not viewable as Designer Mode, because at the begin of CreatorsGUI.cs
 --
